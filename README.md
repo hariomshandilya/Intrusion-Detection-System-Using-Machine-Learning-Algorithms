@@ -285,3 +285,17 @@ X = sc.fit_transform(X)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.33, random_state = 42) 
 print(X_train.shape, X_test.shape) 
 print(y_train.shape, y_test.shape) 
+Code: Python implementation of Guassian Naive Bayes
+
+filter_none
+brightness_4
+  
+# Gaussian Naive Bayes 
+from sklearn.naive_bayes import GaussianNB 
+from sklearn.metrics import accuracy_score 
+  
+clfg = GaussianNB() 
+start_time = time.time() 
+clfg.fit(X_train, y_train.values.ravel()) 
+end_time = time.time() 
+print("Training time: ", end_time-start_time)

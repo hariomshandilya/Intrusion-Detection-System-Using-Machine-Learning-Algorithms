@@ -200,3 +200,25 @@ plt.figure(figsize =(15, 12))
 sns.heatmap(corr) 
   
 plt.show() 
+Code:
+
+filter_none
+brightness_4
+  
+  
+# This variable is highly correlated with num_compromised and should be ignored for analysis. 
+#(Correlation = 0.9938277978738366) 
+df.drop('num_root', axis = 1, inplace = True) 
+  
+# This variable is highly correlated with serror_rate and should be ignored for analysis. 
+#(Correlation = 0.9983615072725952) 
+df.drop('srv_serror_rate', axis = 1, inplace = True) 
+  
+# This variable is highly correlated with rerror_rate and should be ignored for analysis. 
+#(Correlation = 0.9947309539817937) 
+df.drop('srv_rerror_rate', axis = 1, inplace = True) 
+  
+# This variable is highly correlated with srv_serror_rate and should be ignored for analysis. 
+#(Correlation = 0.9993041091850098) 
+df.drop('dst_host_srv_serror_rate', axis = 1, inplace = True) 
+  

@@ -265,3 +265,23 @@ brightness_4
   
 from sklearn.model_selection import train_test_split 
 from sklearn.preprocessing import MinMaxScaler 
+Code:
+
+filter_none
+brightness_4
+  
+# Splitting the dataset 
+df = df.drop(['target', ], axis = 1) 
+print(df.shape) 
+  
+# Target variable and train set 
+y = df[['Attack Type']] 
+X = df.drop(['Attack Type', ], axis = 1) 
+  
+sc = MinMaxScaler() 
+X = sc.fit_transform(X) 
+  
+# Split test and train data  
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.33, random_state = 42) 
+print(X_train.shape, X_test.shape) 
+print(y_train.shape, y_test.shape) 

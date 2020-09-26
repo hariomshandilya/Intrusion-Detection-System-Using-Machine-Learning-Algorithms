@@ -237,3 +237,11 @@ df.drop('dst_host_srv_rerror_rate', axis = 1, inplace = True)
 # This variable is highly correlated with srv_rerror_rate and should be ignored for analysis. 
 #(Correlation = 0.9865705438845669) 
 df.drop('dst_host_same_srv_rate', axis = 1, inplace = True) 
+Code: Feature Mapping – Apply feature mapping on features such as : ‘protocol_type’ & ‘flag’.
+
+filter_none
+brightness_4
+  
+# protocol_type feature mapping 
+pmap = {'icmp':0, 'tcp':1, 'udp':2} 
+df['protocol_type'] = df['protocol_type'].map(pmap) 

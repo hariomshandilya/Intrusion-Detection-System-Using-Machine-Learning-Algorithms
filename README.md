@@ -59,3 +59,14 @@ Step 1 – Data Preprocessing:
 Code: Importing libraries and reading features list from ‘kddcup.names’ file.
 
 filter_none
+import os 
+import pandas as pd 
+import numpy as np 
+import matplotlib.pyplot as plt 
+import seaborn as sns 
+import time 
+  
+# reading features list 
+with open("..\\kddcup.names", 'r') as f: 
+    print(f.read()) 
+    

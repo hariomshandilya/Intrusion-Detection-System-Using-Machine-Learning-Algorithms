@@ -183,3 +183,20 @@ cate_cols.remove('target')
 cate_cols.remove('Attack Type') 
   
 cate_cols 
+Code: Data Correlation – Find the highly correlated variables using heatmap and ignore them for analysis.
+
+filter_none
+brightness_4
+  
+  
+df = df.dropna('columns')# drop columns with NaN 
+  
+df = df[[col for col in df if df[col].nunique() > 1]]# keep columns where there are more than 1 unique values 
+  
+corr = df.corr() 
+  
+plt.figure(figsize =(15, 12)) 
+  
+sns.heatmap(corr) 
+  
+plt.show() 

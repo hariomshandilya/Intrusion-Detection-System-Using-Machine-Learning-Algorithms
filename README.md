@@ -171,3 +171,15 @@ Finding missing values of all features.
 filter_none
 brightness_4
 df.isnull().sum()
+Code: Finding Categorical Features
+
+filter_none
+brightness_4
+# Finding categorical features 
+num_cols = df._get_numeric_data().columns 
+  
+cate_cols = list(set(df.columns)-set(num_cols)) 
+cate_cols.remove('target') 
+cate_cols.remove('Attack Type') 
+  
+cate_cols 

@@ -384,3 +384,15 @@ clfl.fit(X_train, y_train.values.ravel())
 end_time = time.time() 
 print("Training time: ", end_time-start_time) 
  
+Code: Python implementation of Gradient Descent
+
+filter_none
+brightness_4
+  
+from sklearn.ensemble import GradientBoostingClassifier 
+  
+clfg = GradientBoostingClassifier(random_state = 0) 
+start_time = time.time() 
+clfg.fit(X_train, y_train.values.ravel()) 
+end_time = time.time() 
+print("Training time: ", end_time-start_time) 

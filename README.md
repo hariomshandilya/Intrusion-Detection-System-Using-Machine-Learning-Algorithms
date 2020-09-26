@@ -50,3 +50,12 @@ Note: The following features refer to these same-service connections.
 srv_serror_rate	% of connections that have “SYN” errors	continuous
 srv_rerror_rate	% of connections that have “REJ” errors	continuous
 srv_diff_host_rate	% of connections to different hosts	continuous
+Various Algorithms Applied: Guassian Naive Bayes, Decision Tree, Random Fprest, Support Vector Machine, Logistic Regression.
+
+Approach Used: I have applied various classification algorithms that are mentioned above on the KDD dataset and compare there results to build a predictive model.
+
+Step 1 – Data Preprocessing:
+
+Code: Importing libraries and reading features list from ‘kddcup.names’ file.
+
+filter_none

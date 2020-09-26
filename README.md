@@ -250,3 +250,18 @@ df['protocol_type'] = df['protocol_type'].map(pmap)
 # flag feature mapping 
 fmap = {'SF':0, 'S0':1, 'REJ':2, 'RSTR':3, 'RSTO':4, 'SH':5, 'S1':6, 'S2':7, 'RSTOS0':8, 'S3':9, 'OTH':10} 
 df['flag'] = df['flag'].map(fmap)
+Code: Remove irrelevant features such as ‘service’ before modelling
+
+filter_none
+brightness_4
+  
+df.drop('service', axis = 1, inplace = True) 
+Step 2 – Modelling
+
+Code: Importing libraries and splitting the dataset
+
+filter_none
+brightness_4
+  
+from sklearn.model_selection import train_test_split 
+from sklearn.preprocessing import MinMaxScaler 

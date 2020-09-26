@@ -166,3 +166,8 @@ filter_none
 brightness_4
   
 df.shape 
+Finding missing values of all features.
+
+filter_none
+brightness_4
+df.isnull().sum()

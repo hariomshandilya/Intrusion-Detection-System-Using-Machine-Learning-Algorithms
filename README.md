@@ -160,4 +160,9 @@ df = pd.read_csv(path, names = columns)
 # Adding Attack Type column 
 df['Attack Type'] = df.target.apply(lambda r:attacks_types[r[:-1]]) 
 df.head() 
- 
+ Shape of dataframe and getting data type of each feature
+
+filter_none
+brightness_4
+  
+df.shape 

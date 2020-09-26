@@ -111,3 +111,12 @@ dst_host_serror_rate,
 dst_host_srv_serror_rate, 
 dst_host_rerror_rate, 
 dst_host_srv_rerror_rate"""
+columns =[] 
+for c in cols.split(', '): 
+    if(c.strip()): 
+       columns.append(c.strip()) 
+  
+columns.append('target') 
+print(len(columns)) 
+with open("..\\training_attack_types", 'r') as f: 
+    print(f.read()) 

@@ -349,3 +349,15 @@ clfr.fit(X_train, y_train.values.ravel())
 end_time = time.time() 
 print("Training time: ", end_time-start_time) 
  
+: Python implementation of Support Vector Classifier
+
+filter_none
+brightness_4
+  
+from sklearn.svm import SVC 
+  
+clfs = SVC(gamma = 'scale') 
+start_time = time.time() 
+clfs.fit(X_train, y_train.values.ravel()) 
+end_time = time.time() 
+print("Training time: ", end_time-start_time) 

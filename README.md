@@ -336,3 +336,16 @@ y_test_pred = clfd.predict(X_train)
 end_time = time.time() 
 print("Testing time: ", end_time-start_time) 
  
+ Python code implementation of Random Forest
+
+filter_none
+brightness_4
+  
+from sklearn.ensemble import RandomForestClassifier 
+  
+clfr = RandomForestClassifier(n_estimators = 30) 
+start_time = time.time() 
+clfr.fit(X_train, y_train.values.ravel()) 
+end_time = time.time() 
+print("Training time: ", end_time-start_time) 
+ 

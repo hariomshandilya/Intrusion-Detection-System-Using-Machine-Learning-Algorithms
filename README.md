@@ -120,3 +120,23 @@ columns.append('target')
 print(len(columns)) 
 with open("..\\training_attack_types", 'r') as f: 
     print(f.read()) 
+Code: Creating a dictionary of attack_types
+
+filter_none
+brightness_4
+   
+attacks_types = { 
+    'normal': 'normal', 
+'back': 'dos', 
+'buffer_overflow': 'u2r', 
+'ftp_write': 'r2l', 
+'guess_passwd': 'r2l', 
+'imap': 'r2l', 
+'ipsweep': 'probe', 
+'land': 'dos', 
+'loadmodule': 'u2r', 
+'multihop': 'r2l', 
+'neptune': 'dos', 
+'nmap': 'probe', 
+'perl': 'u2r', 
+'phf': 'r2l', 

@@ -150,3 +150,14 @@ attacks_types = {
 'warezclient': 'r2l', 
 'warezmaster': 'r2l', 
 } 
+Code: Reading the dataset(‘kddcup.data_10_percent.gz’) and adding Attack Type feature in the training dataset where attack type feature has 5 distinct values i.e. dos, normal, probe, r2l, u2r.
+
+filter_none
+brightness_4
+path = "..\\kddcup.data_10_percent.gz"
+df = pd.read_csv(path, names = columns) 
+  
+# Adding Attack Type column 
+df['Attack Type'] = df.target.apply(lambda r:attacks_types[r[:-1]]) 
+df.head() 
+ 

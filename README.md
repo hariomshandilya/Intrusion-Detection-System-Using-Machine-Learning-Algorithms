@@ -245,3 +245,8 @@ brightness_4
 # protocol_type feature mapping 
 pmap = {'icmp':0, 'tcp':1, 'udp':2} 
 df['protocol_type'] = df['protocol_type'].map(pmap) 
+
+  
+# flag feature mapping 
+fmap = {'SF':0, 'S0':1, 'REJ':2, 'RSTR':3, 'RSTO':4, 'SH':5, 'S1':6, 'S2':7, 'RSTOS0':8, 'S3':9, 'OTH':10} 
+df['flag'] = df['flag'].map(fmap)

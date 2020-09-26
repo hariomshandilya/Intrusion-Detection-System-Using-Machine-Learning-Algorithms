@@ -371,3 +371,16 @@ y_test_pred = clfs.predict(X_train)
 end_time = time.time() 
 print("Testing time: ", end_time-start_time) 
  
+Code: Python implementation of Logistic Regression
+
+filter_none
+brightness_4
+  
+from sklearn.linear_model import LogisticRegression 
+  
+clfl = LogisticRegression(max_iter = 1200000) 
+start_time = time.time() 
+clfl.fit(X_train, y_train.values.ravel()) 
+end_time = time.time() 
+print("Training time: ", end_time-start_time) 
+ 

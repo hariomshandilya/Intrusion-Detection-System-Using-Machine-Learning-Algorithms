@@ -406,3 +406,13 @@ values = [87.951, 99.058, 99.997, 99.875, 99.352, 99.793]
 f = plt.figure(figsize =(15, 3), num = 10) 
 plt.subplot(131) 
 plt.bar(names, values)
+Analyse the training and testing time of each model.
+
+filter_none
+brightness_4
+  
+names = ['NB', 'DT', 'RF', 'SVM', 'LR', 'GB'] 
+values = [1.11452, 2.44087, 17.08491, 218.26840, 92.94222, 633.229] 
+f = plt.figure(figsize =(15, 3), num = 10) 
+plt.subplot(131) 
+plt.bar(names, values)

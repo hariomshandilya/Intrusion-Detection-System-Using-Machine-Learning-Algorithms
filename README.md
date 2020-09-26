@@ -310,3 +310,11 @@ start_time = time.time()
 y_test_pred = clfg.predict(X_train) 
 end_time = time.time() 
 print("Testing time: ", end_time-start_time) 
+Code:
+
+filter_none
+brightness_4
+  
+print("Train score is:", clfg.score(X_train, y_train)) 
+print("Test score is:", clfg.score(X_test, y_test)) 
+ 

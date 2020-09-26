@@ -222,3 +222,18 @@ df.drop('srv_rerror_rate', axis = 1, inplace = True)
 #(Correlation = 0.9993041091850098) 
 df.drop('dst_host_srv_serror_rate', axis = 1, inplace = True) 
   
+# This variable is highly correlated with rerror_rate and should be ignored for analysis. 
+#(Correlation = 0.9869947924956001) 
+df.drop('dst_host_serror_rate', axis = 1, inplace = True) 
+  
+# This variable is highly correlated with srv_rerror_rate and should be ignored for analysis. 
+#(Correlation = 0.9821663427308375) 
+df.drop('dst_host_rerror_rate', axis = 1, inplace = True) 
+  
+# This variable is highly correlated with rerror_rate and should be ignored for analysis. 
+#(Correlation = 0.9851995540751249) 
+df.drop('dst_host_srv_rerror_rate', axis = 1, inplace = True) 
+  
+# This variable is highly correlated with srv_rerror_rate and should be ignored for analysis. 
+#(Correlation = 0.9865705438845669) 
+df.drop('dst_host_same_srv_rate', axis = 1, inplace = True) 

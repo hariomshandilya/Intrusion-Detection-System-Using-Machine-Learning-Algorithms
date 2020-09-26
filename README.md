@@ -318,3 +318,16 @@ brightness_4
 print("Train score is:", clfg.score(X_train, y_train)) 
 print("Test score is:", clfg.score(X_test, y_test)) 
  
+Code: Python implementation of Decision Tree
+
+filter_none
+brightness_4
+  
+# Decision Tree  
+from sklearn.tree import DecisionTreeClassifier 
+  
+clfd = DecisionTreeClassifier(criterion ="entropy", max_depth = 4) 
+start_time = time.time() 
+clfd.fit(X_train, y_train.values.ravel()) 
+end_time = time.time() 
+print("Training time: ", end_time-start_time) 

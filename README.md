@@ -140,3 +140,13 @@ attacks_types = {
 'nmap': 'probe', 
 'perl': 'u2r', 
 'phf': 'r2l', 
+'pod': 'dos', 
+'portsweep': 'probe', 
+'rootkit': 'u2r', 
+'satan': 'probe', 
+'smurf': 'dos', 
+'spy': 'r2l', 
+'teardrop': 'dos', 
+'warezclient': 'r2l', 
+'warezmaster': 'r2l', 
+} 

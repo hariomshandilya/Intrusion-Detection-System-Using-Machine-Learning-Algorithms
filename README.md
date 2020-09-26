@@ -396,3 +396,13 @@ start_time = time.time()
 clfg.fit(X_train, y_train.values.ravel()) 
 end_time = time.time() 
 print("Training time: ", end_time-start_time) 
+ Analyse the training and testing accuracy of each model.
+
+filter_none
+brightness_4
+  
+names = ['NB', 'DT', 'RF', 'SVM', 'LR', 'GB'] 
+values = [87.951, 99.058, 99.997, 99.875, 99.352, 99.793] 
+f = plt.figure(figsize =(15, 3), num = 10) 
+plt.subplot(131) 
+plt.bar(names, values)
